@@ -22,15 +22,15 @@ function App() {
       return;
     } else {
       setErrorMessage(false);
-    }
-    let fetchRequestToJson;
-    fetchRequestToJson = await fetchRequest.json();
-    const list = [];
-    if (fetchRequestToJson.length > 0) {
-      fetchRequestToJson.forEach(repo => {
-        list.push({ id: repo.id, url: repo.url, name: repo.name,  }); 
-      })
-      updateRepoList(list);
+      let fetchRequestToJson;
+      fetchRequestToJson = await fetchRequest.json();
+      const list = [];
+      if (fetchRequestToJson.length > 0) {
+        fetchRequestToJson.forEach(repo => {
+          list.push({ id: repo.id, url: repo.url, name: repo.name,  }); 
+        })
+        updateRepoList(list);
+      }
     }
   }
 
