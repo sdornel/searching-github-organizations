@@ -1,3 +1,8 @@
+To start the app run "npm install" and then "npm start"
+
+If this project was larger I would probably use typescript. Unit/E2E testing would also be incorporated. Given this application is quite small and simple I saw no need to add tests at this time.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
