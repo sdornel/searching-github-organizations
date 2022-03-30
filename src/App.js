@@ -7,8 +7,6 @@ function App() {
   let [errorMessage, setErrorMessage] = useState(false);
   let [repoList, updateRepoList] = useState([]);
 
-  useEffect(() => {}, [searchString, updateSearchString, repoList, updateRepoList]);
-
   const onInputStringChanged = (value) => {
     updateSearchString(value);
   }
